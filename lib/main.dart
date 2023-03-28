@@ -85,21 +85,49 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
-                'Você apertou o botão essa quantidade de vezes: ',
-                textScaleFactor: 1.1,
-              ),
-              Text(
-                '$_counter',
-                style: Theme.of(context).textTheme.headlineMedium,
-                textScaleFactor: 0.7,
-              ),
-            ],
-          ),
+        body: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.red,
+                )
+              ],
+            ),
+            Container(
+              width: 200,
+              height: 100,
+              color: Colors.green,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.brown,
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.purple,
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.yellow,
+                )
+              ],
+            )
+          ],
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
